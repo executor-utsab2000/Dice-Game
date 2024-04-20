@@ -1,0 +1,56 @@
+.landingBg {
+    background: url('../../../gameBg.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+
+    .content {
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        // background-color: aqua;
+        font-style: italic;
+        flex-direction: column;
+
+        .header {
+            color: white;
+            font-weight: 800;
+            font-size: 3rem;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        .btnContainer {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            button {
+                padding: 0.6rem 0;
+                margin-top: 1rem;
+                width: 12rem;
+                border: 2px solid #d4a373;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 1.1rem;
+                text-transform: capitalize;
+                font-style: italic;
+                background-color: #faedcd;
+
+                &:hover {
+                    color: red;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+
+
+
+}

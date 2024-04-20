@@ -1,0 +1,103 @@
+.gameInterFace {
+    padding-top: 2rem;
+
+    .score {
+        font-weight: 700;
+
+        .scorePoint {
+            font-size: 2.3rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: red;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #495057;
+        }
+    }
+
+    .diceBtns {
+        display: flex;
+        flex-wrap: wrap;
+
+        .imgContainer {
+            padding: 3px;
+            border: 1px solid #495057;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            border-radius: 10px;
+            background-color: transparent;
+
+            img {
+                height: 4rem;
+                border-radius: 10px;
+            }
+
+        }
+    }
+
+
+
+    .computerDice {
+        margin-top: 5rem;
+
+        .imgContainer {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+
+            img {
+                height: 12rem;
+                width: 12rem;
+            }
+        }
+
+    }
+
+
+    .clickCounter {
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+
+
+    .btnContainer {
+        div {
+            margin: 0.5rem 0;
+
+
+            button {
+                margin: 0.5rem;
+                width: 12rem;
+                border: 0;
+                border-radius: 10px;
+                padding: 0.8rem 0;
+                font-weight: 700;
+                font-size: 0.9rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }
+
+            .start {
+                background-color: #57cc99;
+                color: red;
+            }
+
+            .rulesBtn {
+                background-color: #bc6c25;
+                color: #fdf0d5;
+            }
+
+            .back {
+                background-color: #ef233c;
+                color: #ffca3a;
+            }
+
+            .reset {
+                background-color: #00f5d4;
+                color: #31572c;
+            }
+        }
+    }
+
+}
+
