@@ -34,12 +34,12 @@ export default function GameInterFace({ backToLanding }) {
     }
 
     const click_Play = (btnNoClicked) => {
-        if (isBtnDisabled == true && clickCounter != 2) {
+        if (isBtnDisabled == true && clickCounter != 20) {
             toast("Click on The Start Button")
         }
 
         else {
-            if (clickCounter != 2) {
+            if (clickCounter != 20) {
                 const randomNumber = Math.floor(Math.random() * 6);
                 setComputerDice(diceArray[randomNumber])
                 // console.log(btnNoClicked, randomNumber);
@@ -53,7 +53,7 @@ export default function GameInterFace({ backToLanding }) {
                 }
 
             }
-            else if (clickCounter == 2) {
+            else if (clickCounter == 20) {
                 setIsBtnDisabled(true)
 
             }
@@ -61,10 +61,10 @@ export default function GameInterFace({ backToLanding }) {
     }
 
     const ifDisabledAlert = () => {
-        if (isBtnDisabled == true && clickCounter != 2) {
+        if (isBtnDisabled == true && clickCounter != 20) {
             toast("Click on The Start Button")
         }
-        else if (isBtnDisabled == true && clickCounter === 2) {
+        else if (isBtnDisabled == true && clickCounter === 20) {
             toast("Click On Reset to Restart the Game")
         }
     }
@@ -126,7 +126,7 @@ export default function GameInterFace({ backToLanding }) {
                         showCount ? <div className="row">
                             <div className="col-12 text-center clickCounter my-4">
                                 <div className="">You Clicked <span className="text-danger"> {clickCounter} </span> times</div>
-                                <div className="">you are left with only <span className="text-danger"> {2 - clickCounter} </span> times</div>
+                                <div className="">you are left with only <span className="text-danger"> {20 - clickCounter} </span> times</div>
                             </div>
                         </div> : ''
                     }
@@ -147,7 +147,7 @@ export default function GameInterFace({ backToLanding }) {
 
                                 <div className='d-flex justify-content-center'>
                                     <button className='back' onClick={() => backToLanding(false)}>Back</button>
-                                    {clickCounter === 2 ? <button className='reset' onClick={reset}>Reset</button> : ''}
+                                    {clickCounter === 20 ? <button className='reset' onClick={reset}>Reset</button> : ''}
                                 </div>
                             </div>
                         </div>
